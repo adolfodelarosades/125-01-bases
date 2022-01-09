@@ -6,4 +6,11 @@ import { Component } from '@angular/core';
 })
 export class ListadoComponent {
 
+  heroeBorrado: string = '';
+  heroes: string[] = ['Spiderman', 'Ironman', 'Hulk', 'Thor', 'Capitán América'];
+
+  borrarHeroe(): void {
+    this.heroeBorrado = this.heroes.shift() || '';
+  }
+
 }
