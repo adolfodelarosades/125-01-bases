@@ -12,8 +12,7 @@ export class MainPageComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  agregar( event: any ) {
-    event.preventDefault();
+  agregar() {
     console.log("Has presionado el botón Agregado");
   }
 
