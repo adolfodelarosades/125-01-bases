@@ -31,4 +31,10 @@ export class MainPageComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  agregarNuevoPersonaje( personaje: Personaje){
+    console.log('Agregar Nuevo Personaje ...');
+    console.log( personaje );
+    this.personajes.push(personaje);
+  }
+
 }
