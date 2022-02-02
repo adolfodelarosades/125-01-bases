@@ -22,30 +22,13 @@ export class MainPageComponent implements OnInit {
   ]
 
   nuevo: Personaje = {
-    nombre: '',
-    poder: 0
+    nombre: 'Maestro Roshi',
+    poder: 1000
   }
 
   constructor() { }
 
   ngOnInit(): void {
-  }
-
-  agregar() {
-    if( this.nuevo.nombre.trim().length === 0){
-      return;
-    }
-
-    //Añadir personaje
-    this.personajes.push(this.nuevo);
-    console.log('Personaje añadido: ', this.nuevo );
-
-    //Limpiar nuevo
-    this.nuevo = {
-      nombre: '',
-      poder: 0
-    }
-
   }
 
 }
