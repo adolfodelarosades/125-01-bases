@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Personaje } from '../interfaces/dbz.interface';
+import { DbzService } from '../services/dbz.service';
 
 @Component({
   selector: 'app-main-page',
@@ -26,7 +27,7 @@ export class MainPageComponent implements OnInit {
     poder: 1000
   }
 
-  constructor() { }
+  constructor( private dbzService: DbzService ) { }
 
   ngOnInit(): void {
   }
