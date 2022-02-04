@@ -25,4 +25,8 @@ export class DbzService {
     console.log('Servicio inicializado');
   }
 
+  agregarPersonaje( personaje: Personaje ){
+    this._personajes.push(personaje);
+  }
+
 }
